@@ -1,130 +1,95 @@
 <!DOCTYPE html>
-<html>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.bgimg {
-  background-image: url('https://lalgutwa-essentials.github.io/pexels-photo.jpeg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
-
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
+<html lang="en">
+<head>
+<title>Lalgutuwa Essentials - Welcome</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/style.css">
+</head>
 <body>
-  
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Lal-Es</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Map</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Others
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Log out</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
+    <div id="google_translate_element"></div>
+
+    <div class="header">
+
     </div>
-  </div>
-</nav>
 
-<div class="bgimg">
-  <div class="topleft">
-    <p>Logo</p>
-  </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p id="demo"></p>
-  </div>
-  <div class="bottomleft">
-    <p>Some text</p>
-  </div>
-</div>
-  
-  <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Apr 1, 2021 00:00:00").getTime();
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="art.html">Art & Culture</a>
+        <a href="edu.html">Education</a>
+        <a href="sport.html">Sports</a>
+        <a href="news.html">News</a>
+        <a href="travel.html">Travel</a>
+        <a href="events.html">Events</a>
+        <a href="covid.html">Covid-19 Status</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About us</a>
+    </div>
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+    <div class="row">
+    <div class="side">
+        <h2>About Us</h2>
+        <h5>Photo of me:</h5>
+        <div class="myPhoto" style="height:200px;">Image</div>
+        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
 
-  // Get today's date and time
-  var now = new Date().getTime();
+        <h3>Where are we?</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+        <h3>More Text</h3>
+        <p>Lorem ipsum dolor sit ame.</p>
+        <div class="fakeimg" style="height:60px;">Image</div><br>
+        <div class="fakeimg" style="height:60px;">Image</div><br>
+        <div class="fakeimg" style="height:60px;">Image</div>
+    </div>
+    <div class="main">
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        <h2>Crowd at Mutton Shop</h2>
+        <h5>Early Morning, Mar 29, 2021</h5>
+        <div class="fakeimg" style="height:200px;">
+            <video width="100%" height="100%" autoplay loop preload="auto">
+                <source src="media/Matan-Shop-Holi-2021.mp4" type="video/mp4">
+            </video>
+        </div>
 
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+        <p>Video courtesy : Amit Sharma</p>
+        <p>On the auspicious ocassion of holi, people are more engaged at mutton shop instead of color and pitchkari shop. So we can understand how the meaning of holi changed to mutton.</p>
+        <p>Video courtesy from Lalgutuwa, Kathal More</p>
+        <br>
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+        <h2>Holika Dalhan</h2>
+        <h5>Title description, Mar 28, 2021</h5>
+        <div class="fakeimg" style="height:200px;">
+            <video width="100%" height="100%" autoplay loop preload="auto">
+                <source src="media/holika-2021.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>Video courtesy : Amit Sharma</p>
+        <p>On the eve of Holi, typically at or after sunset, the pyre is lit, signifying Holika Dahan. The ritual symbolises the victory of good over evil. People sing and dance around the fire. People also perform parikrama of fire.The next day people play Holi, the popular festival of colors.</p>
+        <br>
+
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    </div>
+    </div>
+
+    <div class="footer">
+    <h2>Footer</h2>
+    </div>
+
+
+
+    <script src="scripts/script.js" defer></script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFI6cuQH47pN2SK3A49l0N1LqfbK0hMSU&callback=initMap" async defer></script>
 
 </body>
 </html>
