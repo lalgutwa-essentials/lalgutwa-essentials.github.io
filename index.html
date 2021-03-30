@@ -5,91 +5,88 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles/social.css">
 </head>
 <body>
 
     <div id="google_translate_element"></div>
 
-    <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Lalgutuwa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="browse.html">Browse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-    </div>
-
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="art.html">Art & Culture</a>
-        <a href="edu.html">Education</a>
-        <a href="sport.html">Sports</a>
-        <a href="news.html">News</a>
-        <a href="travel.html">Travel</a>
-        <a href="events.html">Events</a>
-        <a href="covid.html">Covid-19 Status</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="about.html">About us</a>
-    </div>
-
-    <div class="row">
-    <div class="side">
-        <h2>About Us</h2>
-        <h5>Photo of me:</h5>
-        <div class="myPhoto" style="height:200px;">Image</div>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-
-        <h3>Where are we?</h3>
-        <!--The div element for the map -->
-        <div id="map"></div>
-
-        <h3>More Text</h3>
-        <p>Lorem ipsum dolor sit ame.</p>
-        <div class="fakeimg" style="height:60px;">Image</div><br>
-        <div class="fakeimg" style="height:60px;">Image</div><br>
-        <div class="fakeimg" style="height:60px;">Image</div>
-    </div>
     <div class="main">
+        <div class="newscard">
+            <h2>Crowd at Mutton Shop</h2>
+            <h5>Early Morning, Mar 29, 2021</h5>
+            <div class="fakeimg" style="height:200px;">
+                <video width="100%" height="100%" autoplay loop preload="auto">
+                    <source src="media/Matan-Shop-Holi-2021.mp4" type="video/mp4">
+                </video>
+            </div>
 
-        <h2>Crowd at Mutton Shop</h2>
-        <h5>Early Morning, Mar 29, 2021</h5>
-        <div class="fakeimg" style="height:200px;">
-            <video width="100%" height="100%" autoplay loop preload="auto">
-                <source src="media/Matan-Shop-Holi-2021.mp4" type="video/mp4">
-            </video>
+            <p>Video courtesy : Amit Sharma</p>
+            <p>On the auspicious ocassion of holi, people are more engaged at mutton shop instead of color and pitchkari shop. So we can understand how the meaning of holi changed to mutton.</p>
+            <p>Video courtesy from Lalgutuwa, Kathal More</p>
+            <br>
         </div>
-
-        <p>Video courtesy : Amit Sharma</p>
-        <p>On the auspicious ocassion of holi, people are more engaged at mutton shop instead of color and pitchkari shop. So we can understand how the meaning of holi changed to mutton.</p>
-        <p>Video courtesy from Lalgutuwa, Kathal More</p>
-        <br>
-
-        <h2>Holika Dalhan</h2>
-        <h5>Title description, Mar 28, 2021</h5>
-        <div class="fakeimg" style="height:200px;">
-            <video width="100%" height="100%" autoplay loop preload="auto">
-                <source src="media/holika-2021.mp4" type="video/mp4">
-            </video>
+        
+        <div class="newscard">
+            <h2>Holika Dahan</h2>
+            <h5>Title description, Mar 28, 2021</h5>
+            <div class="fakeimg" style="height:200px;">
+                <video width="100%" height="100%" autoplay loop preload="auto">
+                    <source src="media/holika-2021.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p>Video courtesy : Amit Sharma</p>
+            <p>On the eve of Holi, typically at or after sunset, the pyre is lit, signifying Holika Dahan. The ritual symbolises the victory of good over evil. People sing and dance around the fire. People also perform parikrama of fire.The next day people play Holi, the popular festival of colors.</p>
+            <br>
         </div>
-        <p>Video courtesy : Amit Sharma</p>
-        <p>On the eve of Holi, typically at or after sunset, the pyre is lit, signifying Holika Dahan. The ritual symbolises the victory of good over evil. People sing and dance around the fire. People also perform parikrama of fire.The next day people play Holi, the popular festival of colors.</p>
-        <br>
-
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        
 
     </div>
-    </div>
 
-    <div class="footer">
-    <h2>Footer</h2>
+    <div class="social-link">
+      <a href="www.facebook.com/lalgutwa-essentials" class="fa fa-facebook"></a>
+      <a href="www.twitter.com/lalgutwa-essentials" class="fa fa-twitter"></a>
+      <a href="www.google.com/lalgutwa-essentials" class="fa fa-google"></a>
+      <a href="www.youtube.com/lalgutwa-essentials" class="fa fa-youtube"></a>
+      <a href="www.instagram.com/lalgutwa-essentials" class="fa fa-instagram"></a>
     </div>
 
 
 
     <script src="scripts/script.js" defer></script>
 
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFI6cuQH47pN2SK3A49l0N1LqfbK0hMSU&callback=initMap" async defer></script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
