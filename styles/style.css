@@ -18,7 +18,7 @@ body {
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
 .sideMain {
-    flex: 30%;
+    flex: 20%;
     background-color: rgb(255, 254, 184);
     padding: 20px;
 }
@@ -45,7 +45,14 @@ body {
 .fakeimg {
     background-color: #f1f1f1;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
+}
+
+/*Youtube iframe*/
+.fakeimg iframe{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
 }
 
 
