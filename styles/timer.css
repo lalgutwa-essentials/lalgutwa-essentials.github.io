@@ -1,0 +1,15 @@
+.clock{
+    background-color: aqua;
+    margin: auto;
+    margin-top: 30%;
+    margin-bottom: 40%;
+    width: 80%;
+    display: none;
+}
+
+#timer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
