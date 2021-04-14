@@ -37,6 +37,8 @@ function displayCount() {
 
 function resetEverything(){
     clearTimeout(resetWatch);
+    secondCount = 0;
+    countdown.textContent = "00:00";
     myClock.style.display = 'none';
     myCards.style.display = 'block';
 }
